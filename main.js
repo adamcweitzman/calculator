@@ -6,23 +6,89 @@ var number2;
 var operator;
 
 
-$('#calculate').on('click', function() {
+$('#plus').on('click', function() {
 	number1 = parseInt($('#number1').val())
 	number2 = parseInt($('#number2').val())
-	
-	if ("+") {
-		$('#display').html(number1 + number2)
-	
-	} else if ("-") {
-		$('#display').html(number1 - number2)
-	}
 
-	// if ("/") {
-	// 	$('#display').html(number1 % number2)
-	// }
+	// alert("click")
+
+	$('#display').html(number1 + number2)
+
+
 
 
 
 
 	});
+$('#minus').on('click', function() {
+	number1 = parseInt($('#number1').val())
+	number2 = parseInt($('#number2').val())
+
+	// alert("click")
+
+	$('#display').html(number1 - number2)
+
+
+
+
+
+
+	});
+
+$('#plus').on('click', function() {
+	number1 = parseInt($('#number1').val())
+	number2 = parseInt($('#number2').val())
+
+	// alert("click")
+
+	$('#display').html(number1 + number2)
+
+
+
+
+
+
+	});
+
+$('#divide').on('click', function() {
+	number1 = parseInt($('#number1').val())
+	number2 = parseInt($('#number2').val())
+
+	// alert("click")
+
+	$('#display').html(number1 / number2)
+
+
+
+
+
+
+	});
+
+$('#multiply').on('click', function() {
+	number1 = parseInt($('#number1').val())
+	number2 = parseInt($('#number2').val())
+
+	// alert("click")
+
+	$('#display').html(number1 * number2)
+
+
+
+
+
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
 });
