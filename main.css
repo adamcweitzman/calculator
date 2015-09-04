@@ -1,0 +1,25 @@
+
+
+
+.col-xs-2 {
+	height:200px;
+	text-align: center;
+	background-color: yellow;
+	border: 3px solid black
+}
+
+.col-xs-8 {
+	height:200px;
+	text-align: center;
+	background-color: blue;
+	border: 3px solid black
+
+}
+
+
+.col-sm-4 {
+	height:200px;
+	text-align: center;
+	background-color: orange;
+	border: 3px solid black
+}
