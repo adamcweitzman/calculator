@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator</title>
-	<meta name"viewport" content"width=device-width, initial-scale=1.0">
+	<meta name"viewport">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -12,14 +12,12 @@
 <body>
 
 	<div class ="container">
-		<div class ="section">
 		<div class="row 1">
 			<div class="col-xs-2">
 				<img src="IMG_6723.JPG" id="alPic">
 			</div>
 			<div class="col-xs-8" id="display">0</div>
 			<div class="col-xs-2">
-	<!-- 			<img src="IMG_6724.JPG" id="adamPic"> -->
 			</div>
 		<div class="row 2">
 			<div class="col-sm-4">
@@ -27,21 +25,19 @@
 			</div>
 
 			<div class="col-sm-4">
-					<div class="arithmetic">
-						<input id ="plus" type="button" value="+">
-						<input id ="minus" type="button" value="-">
-						<input id ="divide" type="button" value="/">
-						<input id ="multiply" type="button" value="*">
-						<input id="clear" type="button" onClick="history.go(0)" value="clear">
+				<div class="arithmetic">
+					<input id ="plus" type="button" value="+">
+					<input id ="minus" type="button" value="-">
+					<input id ="divide" type="button" value="/">
+					<input id ="multiply" type="button" value="*">
+					<input id="clear" type="button" onClick="history.go(0)" value="clear">
 
-						<p></p>
-						<p>Step 1 - Enter number to the left</p>
-						<p>Step 2 - Enter number to the right</p>
-						<p>Step 3 - Click on operator</p>
-						<p>Step 4 - MAGIC</p>
-					</div>
-
-			
+					<p></p>
+					<p>Step 1 - Enter number to the left</p>
+					<p>Step 2 - Enter number to the right</p>
+					<p>Step 3 - Click on operator</p>
+					<p>Step 4 - MAGIC</p>
+				</div>
 
 			</div>
 			<div class="col-sm-4">
@@ -51,11 +47,12 @@
 			<div class="col-xs-2"></div>
 			<div class="col-xs-8" id="logheader">Equation Log
 				<ul id = "addList"></ul>
-			</div>
+		</div>
 
 			<div class="col-xs-2"></div>
 		</div>
 	</div>
+</div>
 
 
 <script src="main.js"></script>
