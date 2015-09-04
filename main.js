@@ -4,81 +4,89 @@ $(function () {
 var number1;
 var number2;
 var operator;
-
-
-$('#plus').on('click', function() {
-	number1 = parseInt($('#number1').val())
-	number2 = parseInt($('#number2').val())
-
-	// alert("click")
-
-	$('#display').html(number1 + number2)
+var answer;
+var equation;
 
 
 
 
-
-
-	});
-$('#minus').on('click', function() {
-	number1 = parseInt($('#number1').val())
-	number2 = parseInt($('#number2').val())
+	$('#plus').on('click', function() {
+		number1 = parseInt($('#number1').val())
+		number2 = parseInt($('#number2').val())
 
 	// alert("click")
 
-	$('#display').html(number1 - number2)
+		answer = number1 + number2
 
+		equation = (number1 + " " + "+" + " " + number2 + " " + "=" + " " + answer)
 
+		$('#display').html(number1 + number2)
 
-
-
+		$('#addList').append("<li>" + equation)
 
 	});
 
-$('#plus').on('click', function() {
-	number1 = parseInt($('#number1').val())
-	number2 = parseInt($('#number2').val())
+	$('#minus').on('click', function() {
+		number1 = parseInt($('#number1').val())
+		number2 = parseInt($('#number2').val())
 
 	// alert("click")
 
-	$('#display').html(number1 + number2)
+		answer = (number1 - number2)
 
+		equation = (number1 + " " + "-" + " " + number2 + " " + "=" + " " + answer)
 
+		$('#display').html(number1 - number2)
 
-
-
+		$('#addList').append("<li>" + equation)
 
 	});
 
-$('#divide').on('click', function() {
-	number1 = parseInt($('#number1').val())
-	number2 = parseInt($('#number2').val())
+	$('#plus').on('click', function() {
+		number1 = parseInt($('#number1').val())
+		number2 = parseInt($('#number2').val())
 
 	// alert("click")
 
-	$('#display').html(number1 / number2)
 
+		answer = (number1 + number2)
 
-
-
+		$('#display').html(number1 + number2)
 
 
 	});
 
-$('#multiply').on('click', function() {
-	number1 = parseInt($('#number1').val())
-	number2 = parseInt($('#number2').val())
+	$('#divide').on('click', function() {
+		number1 = parseInt($('#number1').val())
+		number2 = parseInt($('#number2').val())
 
 	// alert("click")
 
-	$('#display').html(number1 * number2)
+		answer = (number1 / number2)
 
 
 
+		$('#display').html(number1 / number2)
 
 
 
 	});
+
+	$('#multiply').on('click', function() {
+		number1 = parseInt($('#number1').val())
+		number2 = parseInt($('#number2').val())
+
+	// alert("click")
+
+		answer = (number1 * number2)
+
+		$('#display').html(number1 * number2)
+
+	});
+
+
+
+
 
 
 
