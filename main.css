@@ -5,14 +5,16 @@
 	height:200px;
 	text-align: center;
 	background-color: purple;
-	border: 3px solid black
+	border: 3px solid black;
+	color:white;
 }
 
 .col-xs-8 {
 	height:200px;
 	text-align: center;
 	background-color: yellow;
-	border: 3px solid black
+	border: 2px solid black;
+	color:purple;
 
 }
 
@@ -21,10 +23,12 @@
 	height:200px;
 	text-align: center;
 	background-color: orange;
-	border: 3px solid black
+	border: 3px solid black;
+	color:purple;
 }
 
 #display {
 	font-family: arial;
 	font-size:50px;
+	color:purple;
 }
