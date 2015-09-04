@@ -32,3 +32,17 @@
 	font-size:50px;
 	color:purple;
 }
+
+#logheader {
+	font-size:20px;
+
+}
+
+#alPic {
+	border-radius:100%;
+	position: absolute;
+    height: 127px;
+    width: 105px;
+    left: 42px;
+}
+

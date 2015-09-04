@@ -7,6 +7,10 @@ var operator;
 var answer;
 var equation;
 
+function alertFunction () {
+	alert("You didn't enter a number you buttface")
+}
+
 
 
 
@@ -14,7 +18,13 @@ var equation;
 		number1 = parseInt($('#number1').val())
 		number2 = parseInt($('#number2').val())
 
-	// alert("click")
+
+
+		if ((!number1 && number1 != 0)  || (!number2 && number2 != 0)) {
+			alertFunction()
+
+		} else {
+
 
 		answer = number1 + number2
 
@@ -24,13 +34,19 @@ var equation;
 
 		$('#addList').append("<li>" + equation)
 
+		};
+
+
 	});
 
 	$('#minus').on('click', function() {
 		number1 = parseInt($('#number1').val())
 		number2 = parseInt($('#number2').val())
 
-	// alert("click")
+		if ((!number1 && number1 != 0)  || (!number2 && number2 != 0)) {
+			alertFunction()
+
+		} else {
 
 		answer = (number1 - number2)
 
@@ -40,19 +56,7 @@ var equation;
 
 		$('#addList').append("<li>" + equation)
 
-	});
-
-	$('#plus').on('click', function() {
-		number1 = parseInt($('#number1').val())
-		number2 = parseInt($('#number2').val())
-
-	// alert("click")
-
-
-		answer = (number1 + number2)
-
-		$('#display').html(number1 + number2)
-
+		}
 
 	});
 
@@ -60,15 +64,24 @@ var equation;
 		number1 = parseInt($('#number1').val())
 		number2 = parseInt($('#number2').val())
 
-	// alert("click")
+		if ((!number1 && number1 != 0)  || (!number2 && number2 != 0)) {
+		alertFunction()
+
+		} else {
+
+
+
 
 		answer = (number1 / number2)
 
-
+		equation = (number1 + " " + "/" + " " + number2 + " " + "=" + " " + answer)
 
 		$('#display').html(number1 / number2)
 
+		$('#addList').append("<li>" + equation)
 
+
+		};
 
 	});
 
@@ -76,27 +89,22 @@ var equation;
 		number1 = parseInt($('#number1').val())
 		number2 = parseInt($('#number2').val())
 
-	// alert("click")
+		if ((!number1 && number1 != 0)  || (!number2 && number2 != 0)) {
+		alertFunction()
+
+		} else {
+
 
 		answer = (number1 * number2)
 
+		equation = (number1 + " " + "*" + " " + number2 + " " + "=" + " " + answer)
+
 		$('#display').html(number1 * number2)
 
+		$('#addList').append("<li>" + equation)
+
+		};
+
 	});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
