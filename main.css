@@ -48,3 +48,11 @@ div {
     left: 42px;
 }
 
+#eqlog {
+	background-color:yellow;
+	height:100px;
+	text-align: center;
+	border: 0px solid black;
+	color:purple;
+}
+
